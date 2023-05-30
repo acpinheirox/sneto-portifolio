@@ -20,6 +20,7 @@
     padding: 25px 0;
     background-color: rgba(11, 26, 163, 0.596);
     font-family: 'Ubuntu', sans-serif;
+    z-index: 999;
     transition: all 0.3s ease;
 }
 
@@ -109,20 +110,71 @@
     background: none;
 }
 /*IMAGEM LOGO*/
-img{
-    width: 200px;
-    height: 200px;
-    margin-top: 250px;
-    margin-left: 700px;
+.logo-home{
+    width: 490px;
+    height: 150px;
+    margin-top: -5000px;
+    margin-left: 600px;
+    text-align: center;
+    margin-top: -1000px;
+    margin-bottom: 60px;
+    
 }
 
 /*MENU CELULAR*/
 
-.menu-bnt{
+.menu-btn{
     color: white;
     font-size: 30px;
     cursor: pointer;
     display: none;
+}
+
+/*Serviços*/
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Roboto' sans-serif;
+
+}
+.about .title{
+    font-family: 'Ubutun' sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background-color: black;
+    transform: translate(-50%);
+}
+.about .title::after{
+    content: "Ultimos serviços";
+    position: absolute;
+    bottom:-12px;
+    left: 50%;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(252, 41, 129);
+    padding: 5px;
+    transform: translate(-50%);
+}
+.about .about-content .left img{
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-left: 45px;
 }
 
 /*RESPONSIVO*/
@@ -145,7 +197,7 @@ img{
         padding: 0 50px;
 
     }
-    .menu-bnt{
+    .menu-btn{
         display: block;
         z-index: 999;
     }
@@ -154,7 +206,7 @@ img{
         width: 100%;
         height: 100vh;
         left: -100%;
-        top: 0;
+        top: 70;
         background-color: black;
         padding-top: 80px;
         text-align: center;
@@ -177,6 +229,10 @@ img{
     .home .home-content .text-3{
         font-size: 35px;
     }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
 }
 @media (max-width: 690px){
     .home .home-content .text-2{
@@ -184,6 +240,9 @@ img{
     }
     .home .home-content .text-3{
         font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
     }
 }
 @media (max-width: 500px){
