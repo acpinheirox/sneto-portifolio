@@ -130,15 +130,11 @@
     display: none;
 }
 
-/*Serviços*/
+/*CODIGOS SIMILARES*/
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Roboto' sans-serif;
-
-}
-.about .title{
+section .title{
     font-family: 'Ubutun' sans-serif;
     text-align: center;
     font-size: 40px;
@@ -147,7 +143,7 @@ section{
     padding-bottom: 20px;
     position: relative;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -157,8 +153,7 @@ section{
     background-color: black;
     transform: translate(-50%);
 }
-.about .title::after{
-    content: "Ultimos serviços";
+section .title::after{
     position: absolute;
     bottom:-12px;
     left: 50%;
@@ -167,6 +162,22 @@ section{
     color: rgb(252, 41, 129);
     padding: 5px;
     transform: translate(-50%);
+}
+/*SESSÃO SERVIÇOS*/
+
+.about, .contato, .sobre{
+    font-family: 'Roboto' sans-serif;
+
+}
+.about .about-content, .contato .contato-content, .sobre  .sobre-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .title::after{
+    content: "Ultimos serviços";
 }
 .about .about-content .left img{
     width: 500px;
@@ -177,10 +188,111 @@ section{
     margin-left: 45px;
 }
 
+/*SESSÃO CONTATO*/
+.contato{
+    background: black;
+    color: white;
+}
+.contato .title::before{
+    background: white;
+}
+.contato .title::after{
+    background: black;
+    content: "Faça seu orçamento";
+}
+.contato .contato-content .card{
+    width: calc(33% - 20%);
+    background: #222;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 10px;
+    transition: all 0.3s ease;
+}
+.contato .contato-content .card:hover{
+    background: rgb(11, 26, 163);
+}
+.contato .contato-content .card .box{
+    transition: all 0.3s ease;
+}
+.contato .contato-content .card:hover .box{
+    transform: scale(1.05);
+}
+.contato .contato-content .card ion-icon{
+    font-size: 30px;
+    color: rgb(252, 41, 129) ;
+}
+.contato .contato-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 7px 0;
+}
+.contato .text a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/*SESSÃO SOBRE NÓS*/
+.sobre .title::after{
+    content: "Nossa Historia";
+}
+.sobre .sobre-content .column{
+    width: calc(50% - 30px);
+}
+.sobre .sobre-content .left .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.sobre .sobre-content .right .bars{
+    margin-bottom: 15px;
+}
+.sobre .sobre-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobre .sobre-content .right .span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.sobre .sobre-content .right .line{
+    width: 100%;
+    height: 5px;
+    background: black;
+    position: relative;
+}
+.sobre .sobre-content .right .line::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(163, 163, 248) ;
+}
+.sobre .sobre-content .right .info ion-icon{
+    color: green;
+    font-size: 20px;
+
+}
+
+
 /*RESPONSIVO*/
-@media (max-width: 1104px){
+@media (max-width: 1300px){
     .navbar .max-width{
         margin-left: 0;
+    }
+
+}
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        width: 350px;
+        height: 350px;
+        margin-left: 290px;
+        justify-items: center;
+        display: flex;
+        
     }
 
 }
@@ -194,7 +306,10 @@ section{
 
 @media (max-width: 947px){
     .max-width{
+        max-width: 900px;
         padding: 0 50px;
+        margin-left: -100px;
+        align-items: center;
 
     }
     .menu-btn{
@@ -233,7 +348,20 @@ section{
         font-size: 23px;
         padding: 10px 30px;
     }
+    .about .about-content .column{
+        width: 50%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
 }
+.contato, .contato-content .card{
+    width: calc(100% - 10px);
+    margin-bottom: 20px;
+}
+
 @media (max-width: 690px){
     .home .home-content .text-2{
         font-size: 60px;
@@ -243,6 +371,9 @@ section{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .contato, .contato-content .card{
+        width: 100%;
     }
 }
 @media (max-width: 500px){
