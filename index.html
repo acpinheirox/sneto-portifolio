@@ -102,32 +102,51 @@
         </div>
     </section>
     <!--Contato-->
+    
     <section class="contato" id="contato">
         <div class="max-width">
             <h2 class="title">Contato</h2>
+            
             <div class="contato-content">
-                <div class="card">
-                    <div class="box">
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5571999119455"> <ion-icon name="call-outline" ></ion-icon></a>
-                        <div class="text"> <a target="_blank" href="https://api.whatsapp.com/send?phone=5571999119455">Telefone</a></div>
-                        
+                <form class="colorful-form" action="https://formsubmit.co/gilton_matos@hotmail.com" method="POST">
+                    <div class="form-group">
+                      <label class="form-label" for="name">Nome</label>
+                      <input required="" placeholder="Enter your name" class="form-input" type="text">
+                      <input type="hidden" name="_captcha" value="false">
+                      <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
                     </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <a target="_blank" href="mailto:gilton_matos@hotmail.com"> <ion-icon name="mail-outline"></ion-icon></a>
-                        <div class="text"><a target="_blank" href="mailto:gilton_matos@hotmail.com">E-mail</a></div>
-                        
+                    <div class="form-group">
+                      <label class="form-label" for="email">E-mail</label>
+                      <input required="" placeholder="Enter your email" class="form-input" name="email" id="email" type="email">
                     </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <a target="_blank" href=""> <ion-icon name="logo-instagram"></ion-icon></a>
-                        <div class="text"><a target="_blank" href="">Instagram</a></div>
-                        
+                    <div class="form-group">
+                      <label class="form-label" for="message">Mensagem</label>
+                      <textarea required="" placeholder="Enter your message" class="form-input" name="message" id="message"></textarea>
                     </div>
+                    <button class="form-button" type="submit">Enviar</button>
+                    <div class="card">
+                        <div class="box">
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5571999119455"> <ion-icon name="logo-whatsapp"></ion-icon></a>
+                            <div class="text"> <a target="_blank" href="https://api.whatsapp.com/send?phone=5571999119455"></a></div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <a target="_blank" href=""> <ion-icon name="logo-instagram"></ion-icon></a>
+                            <div class="text"><a target="_blank" href=""></a></div>
+                        </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <a target="_blank" href=""> <ion-icon name="logo-facebook"></ion-icon></a>
+                                <div class="text"><a target="_blank" href=""></a></div>
+                                
+                            </div>
+                        </div>
+                  </form>
+                
                 </div>
             </div>
         </div>
