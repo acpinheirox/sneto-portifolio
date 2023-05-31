@@ -167,6 +167,7 @@ section .title::after{
 
 .about, .contato, .sobre{
     font-family: 'Roboto' sans-serif;
+    
 
 }
 .about .about-content, .contato .contato-content, .sobre  .sobre-content{
@@ -177,7 +178,7 @@ section .title::after{
 }
 
 .about .title::after{
-    content: "Ultimos serviços";
+    content: "Plotagens";
 }
 .about .about-content .left img{
     width: 500px;
