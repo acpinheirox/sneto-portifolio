@@ -531,13 +531,14 @@ section .title::after{
         position: relative;
     }
 }
-    @media (max-width: 375px){
+    @media (max-width: 390px){
         .about .about-content .column{
-            width: 70px;
+            width: 100%;
             margin-bottom: 25px;
             display: inline-block;
             margin: -20px 0 -95px -100px;
-            left: -38%;
+            left: -33%;
+            position: relative;
         }
         .contato .colorful-form{
             width: 100%;
@@ -553,9 +554,9 @@ section .title::after{
             position: relative;
         }
     }
-@media (max-width: 390px){
+@media (max-width: 400px){
     .about .about-content .column{
-        width: 70%;
+        width: 100%;
         margin-bottom: 25px;
         display: inline-block;
         margin: -20px 0 -95px -100px;
@@ -572,7 +573,7 @@ section .title::after{
         top: -20px;
     }
     .contato .contato-content .card{
-        left: -3%;
+        left: -2%;
         position: relative;
     }
 
