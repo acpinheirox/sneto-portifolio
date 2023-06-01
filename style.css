@@ -471,7 +471,7 @@ section .title::after{
         margin-bottom: 25px;
         display: inline-block;
         margin: -20px 0 -95px -100px;
-        left: -30%;
+        left: -34%;
         position: relative;
     }
     .about .title{
@@ -484,10 +484,10 @@ section .title::after{
     }
     .contato .colorful-form{
         width: 100%;
-        max-width: 290px;
+        max-width: 310px;
         height: 450px;
         padding: 32px;
-        left: 13%;
+        left: 14%;
         position: relative;
         top: -20px;
     }
@@ -507,4 +507,74 @@ section .title::after{
         position: relative;
     }
     
+}
+@media (max-width: 420px){
+    .about .about-content .column{
+        width: 70%;
+        margin-bottom: 25px;
+        display: inline-block;
+        margin: -20px 0 -95px -100px;
+        left: -26%;
+        position: relative;
+    }
+    .contato .colorful-form{
+        width: 100%;
+        max-width: 315px;
+        height: 450px;
+        padding: 32px;
+        left: 12%;
+        position: relative;
+        top: -20px;
+    }
+    .contato .contato-content .card{
+        left: -5%;
+        position: relative;
+    }
+}
+    @media (max-width: 375px){
+        .about .about-content .column{
+            width: 50px;
+            margin-bottom: 25px;
+            display: inline-block;
+            margin: -20px 0 -95px -100px;
+            left: -30%;
+            position: relative;
+        }
+        .contato .colorful-form{
+            width: 100%;
+            max-width: 327px;
+            height: 450px;
+            padding: 32px;
+            left: 14%;
+            position: relative;
+            top: -20px;
+        }
+        .contato .contato-content .card{
+            left: -3%;
+            position: relative;
+        }
+    }
+@media (max-width: 390px){
+    .about .about-content .column{
+        width: 70%;
+        margin-bottom: 25px;
+        display: inline-block;
+        margin: -20px 0 -95px -100px;
+        left: -31%;
+        position: relative;
+    }
+    .contato .colorful-form{
+        width: 100%;
+        max-width: 327px;
+        height: 450px;
+        padding: 32px;
+        left: 14%;
+        position: relative;
+        top: -20px;
+    }
+    .contato .contato-content .card{
+        left: -3%;
+        position: relative;
+    }
+
 }
