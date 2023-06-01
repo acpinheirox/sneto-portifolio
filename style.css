@@ -471,7 +471,7 @@ section .title::after{
         width: -50px;
     }
     .sobre .sobre-content .right .bars{
-        left: -40px;
+        left: -20px;
         position: relative;
     }
     .about .about-content .column{
