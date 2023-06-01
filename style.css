@@ -533,12 +533,11 @@ section .title::after{
 }
     @media (max-width: 375px){
         .about .about-content .column{
-            width: 50px;
+            width: 70px;
             margin-bottom: 25px;
             display: inline-block;
             margin: -20px 0 -95px -100px;
-            left: -30%;
-            position: relative;
+            left: -38%;
         }
         .contato .colorful-form{
             width: 100%;
@@ -560,7 +559,7 @@ section .title::after{
         margin-bottom: 25px;
         display: inline-block;
         margin: -20px 0 -95px -100px;
-        left: -31%;
+        left: -34%;
         position: relative;
     }
     .contato .colorful-form{
