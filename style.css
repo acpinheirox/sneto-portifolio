@@ -471,7 +471,7 @@ section .title::after{
         margin-bottom: 25px;
         display: inline-block;
         margin: -20px 0 -95px -100px;
-        left: -15%;
+        left: -30%;
         position: relative;
     }
     .about .title{
@@ -484,11 +484,12 @@ section .title::after{
     }
     .contato .colorful-form{
         width: 100%;
-        max-width: 300px;
+        max-width: 290px;
         height: 450px;
         padding: 32px;
-        left: 11%;
+        left: 13%;
         position: relative;
+        top: -20px;
     }
     .home .home-content{
         text-align: left;
