@@ -284,7 +284,7 @@ section .title::after{
   
 /*SESSÃO SOBRE NÓS*/
 .sobre .title::after{
-    content: "Nossa Historia";
+    content: "O que fazemos";
 }
 .sobre .sobre-content .column{
     width: calc(50% - 30px);
@@ -293,6 +293,9 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
+}
+.sobre .sobre-content .left p{
+    text-align: justify;
 }
 .sobre .sobre-content .right .bars{
     margin-bottom: 15px;
@@ -432,6 +435,11 @@ section .title::after{
     .contato, .contato-content .card{
         width: 100%;
     }
+    .sobre .sobre-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
 }
 @media (max-width: 500px){
     .home .home-content .text-2{
@@ -452,54 +460,26 @@ section .title::after{
         display: none;
     }
     .sobre .sobre-content{
-        width: 100%;
-        margin-top: -10px;
-        font-size: 15px;
-        display: inline-block;
-        left: 45%;
-        position: relative;
-    }
-    .sobre .sobre-content .text-4{
-        margin: 10px;
-        font-size: 15px;
-        text-align: justify;
-        position: relative;
-        left: -15%;
-    }
-    .sobre .sobre-content .text{
-        margin: 0px;
-        font-size: 10px;
-        text-align: center;
-        position: relative;
-        left: -20%;
+        margin: 0 -10px 0 100px;
     }
     .sobre .title{
-        margin-left: 90px;
+        margin-left: 100px;
         margin-top: -10px;
     }
-    .sobre .sobre-content .column{
-        width: -40px;
-    }
-    .sobre .sobre-content .right .bars{
-        left: -20px;
-        position: relative;
-        display: block;
-        text-align: center;
-    }
     .about .about-content .column{
-        display: inline;
+        width: 70%;
+        margin-bottom: 25px;
+        display: inline-block;
+        margin: -20px 0 -95px -100px;
+        left: -15%;
         position: relative;
-        width: 700px;
-        left: -70%;
-        top: -10px;
-
     }
     .about .title{
-        margin-left: 90px;
+        margin-left: 100px;
         margin-top: -10px;
     }
     .contato .title{
-        margin-left: 90px;
+        margin-left: 100px;
         margin-top: -10px;
     }
     .contato .colorful-form{
@@ -507,7 +487,7 @@ section .title::after{
         max-width: 300px;
         height: 450px;
         padding: 32px;
-        left: 12%;
+        left: 11%;
         position: relative;
     }
     .home .home-content{
@@ -517,4 +497,13 @@ section .title::after{
         top: 30px;
         
     }
+    .sobre .sobre-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .contato .contato-content .card{
+        left: -8%;
+        position: relative;
+    }
+    
 }
