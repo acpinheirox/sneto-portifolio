@@ -453,43 +453,53 @@ section .title::after{
     }
     .sobre .sobre-content{
         width: 100%;
-        margin: 50px;
+        margin-top: -10px;
         font-size: 15px;
-        
+        display: inline-block;
+        left: 45%;
+        position: relative;
     }
     .sobre .sobre-content .text-4{
-        margin: 15px;
+        margin: 10px;
         font-size: 15px;
+        text-align: justify;
+        position: relative;
+        left: -15%;
     }
     .sobre .sobre-content .text{
-        margin: 15px;
+        margin: 0px;
         font-size: 10px;
+        text-align: center;
+        position: relative;
+        left: -20%;
     }
     .sobre .title{
-        margin-left: 80px;
+        margin-left: 90px;
         margin-top: -10px;
     }
     .sobre .sobre-content .column{
-        width: -50px;
+        width: -40px;
     }
     .sobre .sobre-content .right .bars{
         left: -20px;
         position: relative;
+        display: block;
+        text-align: center;
     }
     .about .about-content .column{
         display: inline;
         position: relative;
-        width: 600px;
-        left: -65%;
+        width: 700px;
+        left: -70%;
         top: -10px;
 
     }
     .about .title{
-        margin-left: 80px;
+        margin-left: 90px;
         margin-top: -10px;
     }
     .contato .title{
-        margin-left: 80px;
+        margin-left: 90px;
         margin-top: -10px;
     }
     .contato .colorful-form{
