@@ -411,6 +411,11 @@ section .title::after{
     width: calc(100% - 10px);
     margin-bottom: 20px;
 }
+.contato .contato-content .column{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
 
 @media (max-width: 690px){
     .home .home-content .text-2{
@@ -432,5 +437,72 @@ section .title::after{
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .contato, .contato-content .card{
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+    }
+    .contato .contato-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .logo-home{
+        display: none;
+    }
+    .sobre .sobre-content{
+        width: 100%;
+        margin: 50px;
+        font-size: 15px;
+        
+    }
+    .sobre .sobre-content .text-4{
+        margin: 15px;
+        font-size: 15px;
+    }
+    .sobre .sobre-content .text{
+        margin: 15px;
+        font-size: 10px;
+    }
+    .sobre .title{
+        margin-left: 80px;
+        margin-top: -10px;
+    }
+    .sobre .sobre-content .column{
+        width: -50px;
+    }
+    .sobre .sobre-content .right .bars{
+        left: -40px;
+        position: relative;
+    }
+    .about .about-content .column{
+        display: inline;
+        position: relative;
+        width: 800px;
+        left: -37%;
+        top: -10px;
+
+    }
+    .about .title{
+        margin-left: 80px;
+        margin-top: -10px;
+    }
+    .contato .title{
+        margin-left: 80px;
+        margin-top: -10px;
+    }
+    .contato .colorful-form{
+        width: 100%;
+        max-width: 300px;
+        height: 450px;
+        padding: 32px;
+        left: 9%;
+        position: relative;
+    }
+    .home .home-content{
+        text-align: left;
+        position: relative;
+        left: -50px;
+        top: 30px;
+        
     }
 }
