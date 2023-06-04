@@ -533,12 +533,10 @@ section .title::after{
 }
     @media (max-width: 390px){
         .about .about-content .column{
-            width: 100%;
-            margin-bottom: 25px;
-            display: inline-block;
-            margin: -20px 0 -95px -100px;
-            left: -33%;
-            position: relative;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
         .contato .colorful-form{
             width: 100%;
@@ -556,12 +554,13 @@ section .title::after{
     }
 @media (max-width: 400px){
     .about .about-content .column{
-        width: 100%;
-        margin-bottom: 25px;
-        display: inline-block;
-        margin: -20px 0 -95px -100px;
-        left: -34%;
-        position: relative;
+        justify-content: center;
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            gap: 5px;
+            left: 16%;
     }
     .contato .colorful-form{
         width: 100%;
