@@ -193,13 +193,16 @@ section .title::after{
 .contato{
     background: black;
     color: white;
+    background-size: auto;
 }
+
 .contato .title::before{
     background: white;
 }
 .contato .title::after{
     background: black;
     content: "Fale conosco";
+
 }
 .contato .contato-content .card{
     width: 10px;
