@@ -191,17 +191,19 @@ section .title::after{
 
 /*SESSÃO CONTATO*/
 .contato{
-    background: black;
-    color: white;
-    background-size: auto;
+    background-size: 10vh;
+    color: rgb(0, 0, 0);
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 10px;
 }
 
+
 .contato .title::before{
-    background: white;
+    background: rgb(0, 0, 0);
 }
 .contato .title::after{
     background: black;
-    content: "Fale conosco";
 
 }
 .contato .contato-content .card{
@@ -222,7 +224,7 @@ section .title::after{
 
 .contato .contato-content .card ion-icon{
     font-size: 25px;
-    color: rgb(252, 41, 129) ;
+    color: rgb(168, 172, 209) ;
 }
 .contato .contato-content .card .text{
     font-size: 25px;
@@ -231,7 +233,7 @@ section .title::after{
 }
 .contato .text a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
 }
 .colorful-form {
@@ -239,7 +241,7 @@ section .title::after{
     height: 450px;
     margin: auto;
     padding: 32px;
-    background-color: #f5f5f5;
+    background-color: #3d388a;
     border-radius: 10px;
     
   }
@@ -252,27 +254,28 @@ section .title::after{
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #333;
+    color: #ffffff;
   }
   
   .form-input {
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #fff;
-    color: #333;
+    background-color: #d5daf7;
+    color: #ffffff;
     border-radius: 5px;
   }
   
   textarea.form-input {
     height: 100px;
+    resize: none;
   }
   
   .form-button {
     display: block;
     width: 100%;
     padding: 15px;
-    background-color: rgb(252, 41, 129);
+    background-color: rgb(11, 26, 163) ;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -282,7 +285,7 @@ section .title::after{
   }
   
   .form-button:hover {
-    background-color: #ff5f59;
+    background-color: rgb(70, 70, 238);
   }
   
 /*SESSÃO SOBRE NÓS*/
@@ -332,14 +335,22 @@ section .title::after{
     font-size: 20px;
     
 }
+/*Footer*/
 
+footer{
+    background-color: black;
+    color: white;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*RESPONSIVO*/
 @media (max-width: 1300px){
     .navbar .max-width{
         margin-left: 0;
     }
-
 }
 @media (max-width: 1104px){
     .about .about-content .left img{
@@ -442,6 +453,10 @@ section .title::after{
         width: 100%;
         margin-bottom: 35px;
     }
+    .colorful-form{
+        position: relative;
+        margin-left: 15px;
+    }
     
 }
 @media (max-width: 500px){
@@ -510,6 +525,7 @@ section .title::after{
         position: relative;
     }
     
+    
 }
 @media (max-width: 420px){
     .about .about-content .column{
@@ -533,6 +549,10 @@ section .title::after{
         left: -5%;
         position: relative;
     }
+    .colorful-form{
+        position: relative;
+        margin-left: 45px;
+    }
 }
     @media (max-width: 390px){
         .about .about-content .column{
@@ -553,6 +573,11 @@ section .title::after{
         .contato .contato-content .card{
             left: -3%;
             position: relative;
+        }
+        .colorful-form{
+            position: relative;
+            margin-left: 22px;
+            width: 100%;
         }
     }
 @media (max-width: 400px){
@@ -580,3 +605,11 @@ section .title::after{
     }
 
 }
+@media (max-width: 380px){
+    .colorful-form{
+        position: relative;
+        margin-left: 17px;
+        width: 100%;
+    }
+}
+
