@@ -224,7 +224,7 @@ section .title::after{
 
 .contato .contato-content .card ion-icon{
     font-size: 25px;
-    color: rgb(168, 172, 209) ;
+    color: #0066ff ;
 }
 .contato .contato-content .card .text{
     font-size: 25px;
@@ -241,7 +241,7 @@ section .title::after{
     height: 450px;
     margin: auto;
     padding: 32px;
-    background-color: #3d388a;
+    background-color: #c8d3df;
     border-radius: 10px;
     
   }
@@ -254,14 +254,14 @@ section .title::after{
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #ffffff;
+    color: #000000;
   }
   
   .form-input {
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #d5daf7;
+    background-color: #e9ecff;
     color: #ffffff;
     border-radius: 5px;
   }
@@ -275,7 +275,7 @@ section .title::after{
     display: block;
     width: 100%;
     padding: 15px;
-    background-color: rgb(11, 26, 163) ;
+    background-color: #0066ff ;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -285,7 +285,7 @@ section .title::after{
   }
   
   .form-button:hover {
-    background-color: rgb(70, 70, 238);
+    background-color: #005ce6;
   }
   
 /*SESSÃO SOBRE NÓS*/
@@ -344,6 +344,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
 }
 
 /*RESPONSIVO*/
